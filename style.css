@@ -2,17 +2,20 @@
     box-sizing: border-box;
 }
 
+/* set background color and styling of body */
 body {
     background-color: #c7cab6;
     display:flexbox;
     flex-wrap: wrap;
 }
 
+/* Set font and margin for body */
 .body {
     font-family: sans-serif;
     margin-top: 5px;
 }
 
+/* Sets header image sizing and style */
 .hero {
     width: 100%;
     height: 500px;
@@ -22,12 +25,14 @@ body {
     background-position: center;
 }
 
+/* Set styling for name and buttons */
 .header {
     background-color: #041f58;
     color: #d3d3d3;
     position: relative;
 }
 
+/* Styling and formatting for h2 element of name */
 .header h2 {
     font-family: "Lucida Console", Monaco, monospace;
     display: flex;
@@ -39,6 +44,7 @@ body {
     font-size: 50px;
 }
 
+/* Sets padding and position of element. Styling is applied as well */
 .header div {
     padding-top: 25px;
     margin-right: 10px;
@@ -48,6 +54,7 @@ body {
     position: absolute; top: 0; right: 0;
 }
 
+/* control for the unordered list in the header  */
 .header div ul {
     list-style-type: none;
     position: relative;
@@ -56,39 +63,47 @@ body {
     margin-bottom: 1px;
 }
 
+/* formatting for the unordered list, list */
 .header div ul li {
     display: inline-block;
     margin-left: auto;
     position: relative;
 }
 
+/* formatting and style of the list elements */
 .header a {
     font-size: 30px;
     color: #939393;
-    text-decoration: none;
     margin-right: 25px;
 }
 
-.header div ul li a :hover{
-    color: rgb(110, 153, 177);
+/* provides hover psudo for header element with color change */
+.header div ul li :hover{
+    color: rgb(19, 126, 184);
 }
 
+/* applying formatting and styling to friendly element */
 .friendly {
+    border:5px dashed rgba(116, 55, 15, 0.789);
     font-size: 30px;
     text-align: center;
 }
 
+/* Sets control and formatting for experience header */
 .exp {
     text-align: center;
     font-size: 30px;
+    width: 100%;
 }
 
+/* sets controls for experience segment of body element */
 .experience {
     margin: 20px;
     columns: 2;
     justify-content: center;
 }
 
+/* sets controls for images in experience element */
 .experience img {
     height: 70%;
     width: 70%;
@@ -97,64 +112,52 @@ body {
     padding-bottom: 2%;
 }
 
-.experience img :hover {
-    -webkit-transform-scale: 1.5;
-}
-
-
+/* Styling and formatting for h2 element of name */
 .experience h2 {
     font-size: 40px;
     text-align: center;
 }
 
+/* applying formatting and styling to experience element */
 .experience div {
-    border:5px solid rgba(116, 55, 15, 0.789);
+    border:5px dashed rgba(116, 55, 15, 0.789);
     height: 100%;
     width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
+/* provides hover psudo for header element with color change */
 .experience div :hover {
     box-shadow: 0 0 20px rgb(110, 153, 177);
 
 }
 
-.civil-engineering-autocad {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
+/* control for image height */
 .civil-engineering-autocad img {
     height: 400px;
 }
 
-.electrical-engineering-autocad {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.point-cloud {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
+/* control to keep column from breaking the boarder element */
 .computer-programming {
-    margin-bottom: 20px;
-    text-align: center;
     break-inside: avoid-column;
 }
 
-.drone {
-    margin-bottom: 20px;
-    text-align: center;
+/* applying formatting and styling to experience element */
+.contact-me {
+    border:5px dashed rgba(116, 55, 15, 0.789);
+    height: 30%;
 }
 
+/* Styling and formatting for h2 element of name */
 .contact-me h2 {
-    padding-top: 100px;
+    padding-top: 25px;
     text-align: center;
     padding-left: 5%;
     font-size: 30px;
 }
 
+/* formatting for the unordered list, list */
 .contact-me div ul li {
     display: inline-block;
     margin: 5%;
@@ -163,14 +166,14 @@ body {
     padding-left: 6%;
 }
 
+/* formatting for the unordered list, list */
 .contact-me div ul li a {
     font-size: 30px;
     color: #393939;
-    /* text-decoration: none; */
-    /* margin-right: 25px; */
     text-align: center;
 }
 
+/* sets controls for multiple devices */
 @media screen and (max-width: 768px) {
     .header {
         width: 100%;
@@ -178,4 +181,12 @@ body {
     .body {
         width: 100%;
     }
+}
+
+/* sets controls for multiple devices */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
 }
